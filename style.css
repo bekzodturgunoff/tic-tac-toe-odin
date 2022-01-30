@@ -1,0 +1,209 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  padding-left: 136px;
+  padding-right: 136px;
+  font-family: "Comfortaa", cursive;
+  background-color: #262727;
+}
+body {
+  background-color: #212120;
+}
+nav a {
+  text-decoration: none;
+  color: #017bfe;
+}
+.nav-btn {
+  padding: 5px;
+  background-color: #017bfe;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-family: "Comfortaa", cursive;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #262727;
+  margin-top: 20px;
+}
+#overlay.open {
+  display: block;
+}
+
+#make-blur {
+  display: none;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  background-color: rgba(16, 16, 16, 0.473);
+}
+
+#make-blur.open {
+  display: block;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  font-family: "Comfortaa", cursive;
+}
+
+h3 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #017bfe;
+}
+.first-input {
+  margin-top: 10px;
+  background-color: #212120;
+  border: none;
+  padding: 5px;
+  transition: 0.3s ease;
+  border-radius: 2px;
+  font-family: "Comfortaa", cursive;
+  color: #fff;
+}
+.second-input {
+  margin-top: 10px;
+  background-color: #212120;
+  border: none;
+  padding: 5px;
+  transition: 0.3s ease;
+  border-radius: 2px;
+  font-family: "Comfortaa", cursive;
+  color: #fff;
+}
+
+.first-input:focus {
+  outline: 1px solid #017bfe;
+}
+.second-input:focus {
+  outline: 1px solid #017bfe;
+}
+.btn-starter {
+  display: flex;
+  justify-content: center;
+}
+.btn-starter button {
+  padding: 5px;
+  margin-top: 30px;
+  background-color: #017bfe;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-family: "Comfortaa", cursive;
+}
+
+#input-fill {
+  color: #fff;
+  font-family: "Comfortaa", cursive;
+  font-size: 12px;
+}
+
+/* game styles */
+#game {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: min-content;
+  padding: 0px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #fff;
+  background-color: #fff;
+}
+#game.open {
+  display: grid;
+}
+.marker {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #212120;
+  color: #fff;
+  font-size: 37px;
+}
+.top-1,
+.top-2 {
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-top: none;
+  border-left: none;
+}
+.top-3 {
+  border-top: none;
+  border-bottom: 3px solid #fff;
+  border-left: none;
+  border-right: none;
+}
+
+.middle-1,
+.middle-2 {
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-top: none;
+  border-left: none;
+}
+.middle-3 {
+  border-top: none;
+  border-bottom: 3px solid #fff;
+  border-left: none;
+  border-right: none;
+}
+.bottom-1,
+.bottom-2 {
+  border-left: none;
+  border-top: none;
+  border-right: 3px solid #fff;
+  border-bottom: none;
+}
+
+.bottom-3 {
+  border: none;
+}
+
+.marker:active {
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.display {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 50px;
+}
+@media (max-width: 460px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: "Comfortaa", cursive;
+    background-color: #262727;
+  }
+}

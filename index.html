@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">
+      <p>Tic Tac Toe</p>
+    </a>
+    <button class="nav-btn">New game</button>
+  </nav>
+
+  <div id="make-blur"></div>
+  <div id="overlay">
+    <div id="input-fill"></div>
+
+    <form id="form">
+      <h3>New Game</h1>
+        <label for="input-first-player"></label>
+        <input class="first-input" type="text" placeholder="First Player">
+        <label for="input-second-player"></label>
+        <input class="second-input" type="text" placeholder="Second Player">
+
+        <div class="btn-starter">
+          <button type="submit" class="btn-start">Start the game</button>
+        </div>
+
+    </form>
+  </div>
+  <div class="display">
+  </div>
+  <div id="game">
+    <button class="marker top-1" data-pos="0"></button>
+    <button class="marker top-2" data-pos="1"></button>
+    <button class="marker top-3" data-pos="2"></button>
+    <button class="marker middle-1" data-pos="3"></button>
+    <button class="marker middle-2" data-pos="4"></button>
+    <button class="marker middle-3" data-pos="5"></button>
+    <button class="marker bottom-1" data-pos="6"></button>
+    <button class="marker bottom-2" data-pos="7"></button>
+    <button class="marker bottom-3" data-pos="8"></button>
+  </div>
+  <div id="status"></div>
+  <!-- <button class="res-btn">Restart</button> -->
+
+
+</body>
+
+
+</html>
