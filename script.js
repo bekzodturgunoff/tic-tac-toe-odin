@@ -91,6 +91,10 @@ firstInput.addEventListener("keydown", (e) => {
   }
 });
 
+display.addEventListener("mousedown", () => {
+  display.textContent = "";
+});
+
 navBtn.addEventListener("click", () => {
   overlay.classList.add("open");
   makeBlur.classList.add("open");
